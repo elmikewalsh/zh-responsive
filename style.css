@@ -1,0 +1,177 @@
+/*   
+Theme Name: zh responsive
+Version: 1.0.2
+Author: Mike Walsh
+Author URI: http://imaginalgo.com/en/
+Theme URI: http://imaginalgo.com/en/portfolio/tema-wordpress-zh-responsive/
+Description: Clean Minimalist Wordpress Template from zenhabits.net. For help please see <a href="../wp-content/themes/zh-resp/help/en/index.html">the documentation</a>.
+.
+This theme is uncopyrighted, free, and offered as is.
+It is a responsive minimailst Wordpress theme based on the zen habits theme.
+.
+*/
+
+
+/* General Styles - Not Resolution Specific */
+article, aside, footer, header, hgroup, nav, section {
+    display: block;
+}
+html {
+    font-size: 100%;
+    height: 100%;
+}
+body {
+    margin: 0;
+    font: normal 100% Open Sans, Helvetica, sans-serif;
+    background-color: #fff; color: #000;
+    padding: 10px;
+	height:100%;
+}  
+sup {
+    top: -10px;
+}
+
+img, .post img { 
+    max-width:100%; 
+    height: auto;  
+    width: auto\9; /* ie8 */  
+    } 
+img a, .post img a {border:none;text-decoration:none;} 
+
+/* Images */
+.entry-content img,
+.comment-content img,
+.widget img {
+max-width: 97.5%; /* Fluid images for posts, comments, and widgets */
+}
+img[class*="align"],
+img[class*="wp-image-"] {
+height: auto; /* Make sure images with WordPress-added height and width attributes are scaled correctly */
+}
+img.size-full {
+max-width: 97.5%;
+width: auto; /* Prevent stretching of full-size images with height and width attributes in IE8 */
+}
+
+h1 {font-size: 280%; font-weight: normal; padding: 0; margin: .8em 0 0 0; color: #D3D3D3; letter-spacing: .7px; line-height: 95%;}
+h1 a:link {color: #D3D3D3; text-decoration: none; border-style: none;}
+h1 a:visited {color: #D3D3D3; text-decoration: none; border-style: none;}
+
+h2 {font-family: Open Sans, Helvetica, sans-serif; font-size: 2.2em; color:#333; font-weight:normal; margin-top:1em;}
+h3 {font-family: Open Sans, Helvetica, sans-serif; font-size: 1.8em; color:#666; font-weight:normal; line-height: 1em; margin-top: 1.5em;}
+h4 {font-family: Georgia, "Times New Roman", Times, serif; font-size: 1em; color:#000000;}
+h5 {font-size: .7em; color:#666; font-family: Open Sans, Helvetica, sans-serif; font-weight: bold; letter-spacing: .2em; line-height: .2em;}
+h6 {font-size: 1.2em; font-weight:normal; line-height: 1.5em; color:#666; font-family: Open Sans, Helvetica, sans-serif; margin:0 0 10px 0; letter-spacing: .1em; margin-bottom: 1em;}
+h6 strong {color: #56A49F; font-weight:bold;}
+
+p, .menu-also-see ul li a, .menu-also-see ul li:before{line-height: 1.45em !important; margin:0 0 10px 0; text-indent: 0px; font: 1.3em 'Gentium Book Basic', Hoefler Text, Georgia, bodyfont, serif; color: #333;}
+
+a:link {color: #333; text-decoration: none; border-width: 0 0 0 0; border-style: none;}
+a:visited {color: #333; text-decoration: none; border:0; border-width: 0 0 0 0; border-style: none;}
+a:hover, .menu-also-see ul li a:hover {color: #999; text-decoration: none; border:0; border-width: 0 0 0 0; border-style: none;}
+
+p#tagline {padding: 0; font-size: 100%; color: #56A49F; letter-spacing: 12px; font-family: Open Sans, Helvetica, sans-serif; margin-top: .5em; margin-bottom: 5em;}
+p#tagline a:link {padding: 0; font-size: 115%; color: #56A49F; letter-spacing: 12px;}
+p#tagline a:visited {padding: 0; font-size: 115%; color: #56A49F; letter-spacing: 12px;}
+
+.entry {float:left;margin: 2em auto auto;}
+.post a:link {color: #303030; text-decoration: none; border-width: 0 0 1px 0; border-style: none none solid none; border-color: #C0C0C0;}
+.post a img, .post img {text-decoration: none; border:none;}
+.post a:visited {color: #303030; text-decoration: none; border-width: 0 0 1px 0; border-style: none none solid none; border-color: #C0C0C0;}
+.post a:hover {color: #999; border-width: 0 0 1px 0; border-style: none none solid none; border-color: #C0C0C0; text-decoration: none;}
+
+.post ul{padding: .1em 0em 1em 1.3em; font: 1.25em 'Gentium Book Basic', Hoefler Text, Georgia, bodyfont, serif;}
+.post ol{padding: .1em 0em 1em 1.3em; font: 1.25em 'Gentium Book Basic', Hoefler Text, Georgia, bodyfont, serif;}
+.post li{line-height: 1.5em; padding: .2em 0 0 0; color: #333;}
+
+.post blockquote{border-left:2px solid #A5ABAB; margin: 1.8em .8em; padding:0 1em 0 1em; color: #666; font-family: Open Sans, Helvetica, sans-serif;}
+
+.home_bottom {border-bottom: 1px solid #EFEFEF; font-family: Open Sans, Helvetica, sans-serif; font-size: 2em; line-height:2.5em; color: #DEDEDE;}
+
+.navigation {text-transform: uppercase;}
+.navigation p {color: #666 !important; font-size: .7em; letter-spacing: .2em; font-family: Open Sans, Helvetica, sans-serif; font-weight: bold; margin-top: 1em}
+.navigation a {font-family: Open Sans, Helvetica, sans-serif; font-size: 1.1em; color: #666; font-weight: normal; text-transform: none; text-decoration: none !important; letter-spacing: normal;}
+
+#menu-icon {
+	display: none; /* hide menu icon initially */
+}
+
+.all_posts {font-size: 2.4em; font-weight: bold; height: 48px; line-height: 48px;}
+.all_posts a{color: #D3D3D3;}
+.all_posts a:visited{color: #D3D3D3;}
+.all_posts a:hover{color: #666;}
+
+subscribe ul {float: left; list-style: none inside; font-size: 1em; padding: 0px; margin: 0 0 40px 0;}
+subscribe ul li {padding: 0px; line-height: 18px;}
+subscribe a:link {color: #56A49F;}
+subscribe a:visited {color: #56A49F;}
+subscribe a:hover {color: #999;}
+
+nav ul {clear: both; float: left; list-style: none inside; color: #333; padding: 0px; margin: 0;}
+nav ul li {color: #666;padding: 0px; line-height: 1.7em;font-size: .9em; }
+nav .menu ul li a {color: #666;font-size: 1em; }
+
+.menu-also-see ul {margin-left:0px; margin-top:0px; padding-left:0px;} 
+.menu-also-see ul li { display:inline;}
+.menu-also-see ul li:before { content:' : '; }
+.menu-also-see ul li:first-child:before { content:''; }
+
+
+
+/* Boxes */
+#outer {
+    width: 980px;
+    margin: 40px auto;
+}
+#wrap {
+    height: auto !important;
+    min-height: 100%;
+    position: relative;
+    margin: 0 auto -220px auto;
+}
+#page_header {
+    padding: 25px 0;
+}
+#content {
+    width: 640px;
+}
+section#sidebar {
+    width: 280px;
+    float: right;
+}
+#footer {
+    position: relative;
+    bottom: 0;
+    padding:20px 1em;
+    margin: 40px auto;
+    border-bottom: 0;
+    clear:both;
+	}
+#footer p{padding:4px 0;margin: 0; color: #c0c0c0; font-size: .8em; font-family: Open Sans, Helvetica, sans-serif; letter-spacing:.2em;}
+#footer a{color: #c0c0c0;}
+#footer a:hover{color: #999;}
+
+.footer_menu ul {margin-left:0px; margin-top:0px; padding-left:0px;} 
+.footer_menu ul li { display:inline;}
+.footer_menu ul li a{ color:#c0c0c0;padding:4px 0;margin: 0;font-size: .8em; font-family: Open Sans, Helvetica, sans-serif; letter-spacing:.2em;}
+.footer_menu ul li a:hover{ color: #999;}
+.footer_menu ul li:before { color:#c0c0c0;padding:4px 0;margin: 0;font-size: .8em; font-family: Open Sans, Helvetica, sans-serif; letter-spacing:.2em;content:' :: '; }
+.footer_menu ul li:first-child:before { content:''; }
+
+
+.push {
+    height:220px;
+}
+.clear {
+    clear: both;
+}
+
+.search {margin-top:1em;}
+
+#arc {float: left; overflow: hidden; margin-top:0px; margin-left:5px; margin-right:14px; margin-bottom:24px;}	
+.arc p{color:#666; font-family: 'Verdana', sans-serif; font-size: 1em; font-weight: normal !important;}
+.year th{color:#666; font-family: 'Verdana', sans-serif; font-size: 1.5em; font-weight: bold;}
+.arctitle {color:#666; font-family: 'Verdana', sans-serif; font-size: 1em; font-weight: normal;}
+.arctitle th {color:#999; font-family: 'Verdana', sans-serif; font-size: 1.2em; font-weight: normal;}
+.arc2 {color:#999; font-family: 'Open Sans', sans-serif; font-size: 1em; font-weight: normal !important;}
+.arc2 th {color:#999; font-family: 'Open Sans', sans-serif; font-size: 1em; font-weight: normal !important;}
